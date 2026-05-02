@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda - USA Serviços</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <style>
+        :root {
+            --usa-green: #27ae60;
+            --usa-yellow: #fcc602;
+            --usa-blue: #164e91;
+            --dark: #0f172a;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; 
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--dark);
+        }
+
+        .page-wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(155deg, var(--dark) 0%, var(--usa-blue) 10%, var(--usa-green) 60%, var(--usa-yellow) 120%);
+            background-attachment: fixed;
+            background-size: 100% 100vh;
+            position: relative;
+        }
+
+        .emoji-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+        .emoji-bg span { position: absolute; }
+
+        .form-side {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 5;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 480px;
+            background: white;
+            padding: 40px 30px;
+            border-radius: 32px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .brand-header {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            color: var(--usa-blue);
+            letter-spacing: -1px;
+        }
+
+        .search-box h2 {
+            color: #475569;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .contact-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .contact-group label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #656e88;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .info-field {
+            width: 100%;
+            height: 55px;
+            padding: 0 15px;
+            border: 2px solid #f1f5f9;
+            border-radius: 14px;
+            font-size: 1rem;
+            background-color: #f8fafc;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            font-weight: 600;
+        }
+
+        .btn-whatsapp {
+            width: 100%;
+            height: 60px;
+            background-color: #25d366;
+            color: white;
+            border: none;
+            border-radius: 14px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            transition: all 0.2s;
+        }
+
+        .btn-whatsapp:active { transform: scale(0.98); }
+
+        .back-link {
+            display: block;
+            margin-top: 25px;
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+                <div class="emoji-bg">
+            <span style="top: 5%; left: 10%; font-size: 50px; transform: rotate(-15deg);">🛠️</span>
+            <span style="top: 15%; right: 15%; font-size: 45px; transform: rotate(20deg);">🔧</span>
+            <span style="top: 75%; left: 12%; font-size: 50px; transform: rotate(-10deg);">🪜</span>
+            <span style="top: 85%; right: 15%; font-size: 45px; transform: rotate(45deg);">🪛</span>
+            <span style="top: 45%; right: 10%; font-size: 40px; transform: rotate(30deg);">🆘</span>
+            <span style="top: 10%; left: 40%; font-size: 35px; transform: rotate(15deg);">📢</span>
+            <span style="top: 25%; right: 40%; font-size: 50px; transform: rotate(-20deg);">💬</span>
+            <span style="top: 60%; left: 45%; font-size: 40px; transform: rotate(10deg);">🙋‍♂️</span>
+            <span style="top: 80%; right: 45%; font-size: 55px; transform: rotate(-35deg);">💡</span>
+            <span style="top: 50%; left: 15%; font-size: 30px; transform: rotate(12deg);">❓</span>
+            <span style="top: 92%; right: 5%; font-size: 35px; transform: rotate(-30deg);">📩</span>
+        </div>
+
+        <main class="form-side">
+            <div class="search-box">
+                <h1 class="brand-header">Ajuda</h1>
+                <h2>Como podemos ajudar?</h2>
+
+                <div class="contact-group">
+                    <label>✉️ E-mail de Suporte</label>
+                    <div class="info-field">Usaservicos.br@gmail.com</div>
+                </div>
+
+                <div class="contact-group">
+                    <label>💬 Atendimento Rápido</label>
+                    <a href="https://wa.me/+5549999291886" class="btn-whatsapp">
+                        Chamar no WhatsApp
+                    </a>
+                </div>
+                <a href="/" class="back-link">← Voltar ao Início</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
